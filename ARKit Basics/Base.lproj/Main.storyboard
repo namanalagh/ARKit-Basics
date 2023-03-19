@@ -1,26 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XU2-wm-FdY">
     <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ARView-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="PDl-mM-5cI">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARKit_Basics" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Rrd-bS-e5a">
+                <viewController id="XU2-wm-FdY" customClass="ARViewController" customModule="ARKit_Basics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UmL-yG-xVY">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRF-ee-lXK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qov-Kb-xio">
+                                <rect key="frame" x="20" y="1266" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Hue-je-KFh"/>
+                                    <constraint firstAttribute="height" constant="80" id="Qwr-D9-frU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xRF-ee-lXK" secondAttribute="bottom" id="F6e-Hz-Zu2"/>
+                            <constraint firstItem="qov-Kb-xio" firstAttribute="leading" secondItem="UmL-yG-xVY" secondAttribute="leading" constant="20" id="OzS-Of-H6A"/>
+                            <constraint firstItem="xRF-ee-lXK" firstAttribute="leading" secondItem="UmL-yG-xVY" secondAttribute="leading" id="PqK-tN-1eP"/>
+                            <constraint firstItem="xRF-ee-lXK" firstAttribute="top" secondItem="UmL-yG-xVY" secondAttribute="top" id="b6n-FZ-bsk"/>
+                            <constraint firstAttribute="bottom" secondItem="qov-Kb-xio" secondAttribute="bottom" constant="20" id="kP8-Vg-lkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xRF-ee-lXK" secondAttribute="trailing" id="qk0-p6-hdu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="xRF-ee-lXK" id="SNL-SR-Cyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoN-sV-rRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="8"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="deL-qg-Urj">
+            <objects>
+                <viewController id="08V-Fb-yIR" customClass="ViewController" customModule="ARKit_Basics" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VsL-5U-Wrd">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </arscnView>
                     <connections>
-                        <outlet property="arView" destination="Rrd-bS-e5a" id="2gm-WP-2ji"/>
+                        <outlet property="arView" destination="VsL-5U-Wrd" id="O0G-JV-Dcl"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSg-AE-Vti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="-18" y="840"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

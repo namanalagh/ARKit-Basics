@@ -16,6 +16,7 @@
 		C916F82529B053A900C18B95 /* ARKit_BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916F82429B053A900C18B95 /* ARKit_BasicsTests.swift */; };
 		C916F82F29B053A900C18B95 /* ARKit_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916F82E29B053A900C18B95 /* ARKit_BasicsUITests.swift */; };
 		C916F83129B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916F83029B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift */; };
+		C9E17E9A29C768EE00742ABB /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E17E9929C768EE00742ABB /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C916F82A29B053A900C18B95 /* ARKit BasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit BasicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C916F82E29B053A900C18B95 /* ARKit_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_BasicsUITests.swift; sourceTree = "<group>"; };
 		C916F83029B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_BasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9E17E9929C768EE00742ABB /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		C916F80229B053A800C18B95 = {
 			isa = PBXGroup;
 			children = (
+				C9E17E9929C768EE00742ABB /* ARViewController.swift */,
 				C916F80D29B053A800C18B95 /* ARKit Basics */,
 				C916F82329B053A900C18B95 /* ARKit BasicsTests */,
 				C916F82D29B053A900C18B95 /* ARKit BasicsUITests */,
@@ -259,6 +262,7 @@
 				C916F81129B053A800C18B95 /* ViewController.swift in Sources */,
 				C916F80F29B053A800C18B95 /* AppDelegate.swift in Sources */,
 				C916F81329B053A800C18B95 /* Experience.rcproject in Sources */,
+				C9E17E9A29C768EE00742ABB /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB42H87VWR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to the camera to display AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +449,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB42H87VWR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to the camera to display AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,6 +480,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

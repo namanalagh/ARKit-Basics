@@ -1,20 +1,18 @@
 //
-//  ViewController.swift
+//  ARViewController.swift
 //  ARKit Basics
 //
-//  Created by Naman Alagh on 02/03/23.
+//  Created by Naman Alagh on 19/03/23.
 //
 
 import UIKit
-import RealityKit
 import ARKit
+import RealityKit
 
-class ViewController: UIViewController {
+class ARViewController: UIViewController {
+
+    @IBOutlet weak var arView: ARSCNView!
     
-  
-    
-    
-    @IBOutlet var arView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
     
     override func viewDidLoad() {
@@ -27,4 +25,16 @@ class ViewController: UIViewController {
         // Add the box anchor to the scene
         // arView.scene.anchors.append(boxAnchor)
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
