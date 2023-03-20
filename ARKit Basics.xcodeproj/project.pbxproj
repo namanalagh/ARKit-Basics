@@ -17,6 +17,8 @@
 		C916F82F29B053A900C18B95 /* ARKit_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916F82E29B053A900C18B95 /* ARKit_BasicsUITests.swift */; };
 		C916F83129B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916F83029B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift */; };
 		C9E17E9A29C768EE00742ABB /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E17E9929C768EE00742ABB /* ARViewController.swift */; };
+		C9E17E9E29C8553F00742ABB /* Smoke Detector.dae in Resources */ = {isa = PBXBuildFile; fileRef = C9E17E9D29C8553F00742ABB /* Smoke Detector.dae */; };
+		C9E17EA029C8571500742ABB /* SmokeDet.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E17E9F29C8571500742ABB /* SmokeDet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		C916F82E29B053A900C18B95 /* ARKit_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_BasicsUITests.swift; sourceTree = "<group>"; };
 		C916F83029B053A900C18B95 /* ARKit_BasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_BasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9E17E9929C768EE00742ABB /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		C9E17E9D29C8553F00742ABB /* Smoke Detector.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "Smoke Detector.dae"; sourceTree = "<group>"; };
+		C9E17E9F29C8571500742ABB /* SmokeDet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SmokeDet.png; path = ../../../Downloads/SmokeDet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				C916F81229B053A800C18B95 /* Experience.rcproject */,
 				C916F81429B053A800C18B95 /* Main.storyboard */,
 				C916F81729B053A900C18B95 /* Assets.xcassets */,
+				C9E17E9D29C8553F00742ABB /* Smoke Detector.dae */,
+				C9E17E9F29C8571500742ABB /* SmokeDet.png */,
 				C916F81929B053A900C18B95 /* LaunchScreen.storyboard */,
 			);
 			path = "ARKit Basics";
@@ -234,7 +240,9 @@
 			files = (
 				C916F81B29B053A900C18B95 /* LaunchScreen.storyboard in Resources */,
 				C916F81829B053A900C18B95 /* Assets.xcassets in Resources */,
+				C9E17EA029C8571500742ABB /* SmokeDet.png in Resources */,
 				C916F81629B053A800C18B95 /* Main.storyboard in Resources */,
+				C9E17E9E29C8553F00742ABB /* Smoke Detector.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
