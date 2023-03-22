@@ -15,7 +15,6 @@ class ARViewController: UIViewController {
     
     let configuration = ARWorldTrackingConfiguration()
     
-    var originalRotation: SCNVector3? = nil
     var modelNode: SCNNode!
     var currentAngleY: Float = 0.0
     
@@ -46,8 +45,6 @@ class ARViewController: UIViewController {
     private func registerGestureRecognizers(){
         let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinched))
         self.arView.addGestureRecognizer(pinchGestureRecognizer)
-        let rotationGesture = UIRotationGestureRecognizer(target: self, action: #selector(rotation))
-        //self.arView.addGestureRecognizer(rotationGesture)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panned))
         self.arView.addGestureRecognizer(panGesture)
     }
@@ -72,34 +69,7 @@ class ARViewController: UIViewController {
             }
         }
     }
-    
-    @objc func rotation(_ gesture: UIRotationGestureRecognizer){
-        let location = gesture.location(in: self.arView)
-        guard let node = nodeMethod(at: location) else { return }
-            
-        switch gesture.state {
-        case .began:
-            originalRotation = node.eulerAngles
-            print("rot")
-        case .changed:
-            guard var originalRotation = originalRotation else { return }
-            originalRotation.y -= Float(gesture.rotation)
-            node.eulerAngles = originalRotation
-            print("rot")
-        default:
-            originalRotation = nil
-            print("rot")
-        }
-    }
-    
-    private func nodeMethod(at position: CGPoint) -> SCNNode? {
-        let n = self.arView.hitTest(position, options: nil).first(where: {
-            $0.node !== modelNode
-        })?.node
-
-        return n
-    }
-    
+   
     @objc func panned(_ gesture: UIPanGestureRecognizer){
         guard let nodeToRotate = modelNode else { return }
 
@@ -110,8 +80,6 @@ class ARViewController: UIViewController {
                 nodeToRotate.eulerAngles.y = newAngleY
 
                 if(gesture.state == .ended) { currentAngleY = newAngleY }
-
-                print(nodeToRotate.eulerAngles)
-        
+                    print(nodeToRotate.eulerAngles)
     }
 }
